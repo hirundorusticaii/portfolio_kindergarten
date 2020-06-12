@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>保育の特色（かみつれ幼稚園）</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="descrintion" content="かみつれ幼稚園という空想の幼稚園の紹介サイトです">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <!-- jqueryをダウンロードして動かすための記述 -->
+  </head>
+  <body>
+    <header>
+      <div class="header-logo-menu">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <nav>
+              <ul>
+                <a href="index.html">
+                  <li>HOME</li>
+                </a>
+                <a href="feature.html">
+                  <li>保育の特色</li>
+                </a>
+                <a href="facility.html">
+                  <li>施設紹介</li>
+                </a>
+                <a href="event.html">
+                  <li>生活と行事</li>
+                </a>
+                <a href="admission.html">
+                  <li>入園について</li>
+                </a>
+                <a href="contact.html">
+                  <li>お問い合わせ</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="logo-area">
+          <a href="index.html">かみつれ幼稚園</a>
+        </div>
+      </div>
+      <div class="header-menu">
+        <a href="index.html">
+          <h1>
+            <img src="img/logo.jpg" alt="かみつれ幼稚園のロゴ">
+          </h1>
+        </a>
+        <nav>
+          <ul>
+            <a href="index.html">
+              <li>HOME</li>
+            </a>
+            <a href="feature.html">
+              <li>保育の特色</li>
+            </a>
+            <a href="facility.html">
+              <li>施設紹介</li>
+            </a>
+            <a href="event.html">
+              <li>生活と行事</li>
+            </a>
+            <a href="admission.html">
+              <li>入園について</li>
+            </a>
+            <a href="contact.html">
+              <li>お問い合わせ</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="index">保育の特色</h1>
+      <section class="intro concept">
+        <h2>園長あいさつ</h2>
+        <div class="principal">
+          <img src="img/principal.jpg" alt="山田花子園長先生の写真">
+        </div>
+        <h3>自然の中でのびのびと成長してほしい</h3>
+        <div class="summary">
+          <p>えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話えんちょうせんせいのお話
+          </p>
+        </div>
+      </section>
+      <section class="intro concept">
+        <h2>保育の特色</h2>
+        <h3>不思議に思う気持ちを育てる</h3>
+        <h3>仲間と遊ぶ楽しさを学ぶ</h3>
+        <div class="summary">
+          <p>保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話保育の特色のお話
+          </p>
+        </div>
+        <div class="summary_photo">
+          <img src="img/yuugu.jpg" alt="遊具で遊ぶ子どもたちの写真">
+        </div>
+      </section>
+      <section class="intro concept">
+        <h2>本園概要</h2>
+        <ul>
+          <li><span>昭和63年</span> かみつれ幼稚園発足。園長 山田太郎が園長に就任。</li>
+          <li><span>平成12年</span> 本園を現在の園舎へ移転。</li>
+          <li><span>平成19年</span> 園長 山田太郎が退任。園長補佐 山田花子が園長に就任。</li>
+          <li><span>平成20年</span> 本園20周年を迎える。</li>
+          <div class="whitebox"></div>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>かみつれ幼稚園</p>
+      <p>〒000-XXXX ●●県●●市●●町X-X-X</p>
+      <p>TEL:XXXX-XX-XXXX FAX:XXXX-XX-XXXX</p>
+      <p>E-mail:Kamitsure@aaa.ne.jp</p>
+      <p>(C)Kamitsure Kindergarten</p>
+    </footer>
+  </body>
+  <script>
+    $(function() {
+      $('#nav-content li a').on('click', function(event) {
+        $('#nav-input').prop('checked', false);
+      });
+    });
+  </script>
+</html>

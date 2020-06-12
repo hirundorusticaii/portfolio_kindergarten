@@ -1,0 +1,592 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  color: #5e6061;
+  background-color: #ffffe6;
+  font-family: "游ゴシック" , "Yu Gothic" ,  "YuGothic" , sans-serif;
+}
+
+.clearfix::after{
+  /* clearfix指定 */
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* header footerの調整 */
+header,footer{
+  background: #90ee90;
+  color: white;
+  width: 100%;
+  height: 140px;
+}
+
+.header-logo-menu{
+  display: none;
+}
+
+footer{
+  text-align: center;
+}
+
+header img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 20px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold; 
+}
+
+.link a{
+  color: #5e6061;
+}
+
+/* main */
+/* 全体のfloatの適応とサイズ調整 */
+.description{
+  width: 60%;
+  margin-right: 40%;
+}
+
+.mainphoto{
+  float: left;
+  width: 60%;
+}
+
+.infomation{
+  float: right;
+  width: 30%;
+}
+
+/* infomationの調整 */
+.infomation ul{
+  list-style: none;
+}
+
+.icon img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icon ul li {
+  margin: 30px 5px 30px 5px;
+  display:inline-block;
+}
+
+.date ul{
+  border-bottom: 2px dotted #90ee90;
+}
+
+
+/* 行間・文字配置の調整 */
+h2{
+  margin-bottom: 10px;
+}
+
+.intro h2{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-bottom: 2px dotted #90ee90;
+}
+
+.intro h3{
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.link{
+  text-align: right;
+  margin: 50px 50px;
+}
+
+.whitebox{
+  height: 150px;
+}
+
+/* description写真部分の調整 */
+.mainphoto{
+  position: relative;
+  width: 700px;
+}
+
+.mainphoto img{
+  width: 100%;
+  object-fit: contain;
+  /* ↑縦横比が変わらず表示される記述 */
+  margin-bottom: 30px;
+}
+
+.mainphoto h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 3rem;
+}
+
+/* description写真下部のコンテンツ（写真1枚のもの）の調整 */
+.photo_yuugu{
+  text-align: center;
+  margin-top:50px;
+}
+
+.summary{
+  padding: 0 110px 0 110px;
+  line-height: 3.5rem;
+}
+
+/* main写真下部のコンテンツ（写真3枚のもの）の調整 */
+.box{ 
+  text-align:center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sibahu{
+  display: inline-block;
+}
+
+.donguri{
+  display: inline-block;
+}
+
+.kokage{
+  display: inline-block;
+}
+
+.photo{
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background: #eded91;
+  text-align: center;
+}
+
+.photo img{
+  width: 250px;
+  height: 166px;
+  margin: 20px 20px 10px 20px;
+  border: 2px dotted white;
+}
+
+/* ホバーした時の変化 */
+a:hover{
+  color: #eded91;
+}
+
+/* HOMEページ以外の写真レイアウト */
+.summary_photo img{
+  width: 320px;
+  height: 213px;
+}
+
+.summary_photo{
+  text-align: center;
+  margin-top:50px;
+}
+
+/* メインページ以外の見出しの文字調整 */
+.index{
+  color: #eded91;
+  margin: 20px 0 0 20px;
+}
+
+/* 保育の特色のページレイアウト */
+.principal{
+  text-align: center;
+  margin-top:50px;
+}
+
+.concept ul li{
+  margin: 10px 0 0 30px;
+  list-style: none;
+}
+
+.concept ul li span{
+  font-weight: bold;
+}
+
+/* 施設紹介のページレイアウト */
+.facility_map{
+  text-align: center;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* 生活と行事のページレイアウト */
+table{
+  border-collapse: separate;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+td,th{
+  border: 1px solid #5e6061;
+  padding: 8px 20px;
+}
+
+th{
+  background: #eded91;
+  color: white;
+}
+
+/* 入園についてのページレイアウト */
+.admission h3{
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.contact_form{
+  padding-top: 30px;
+  text-align: center;
+}
+
+input,textarea{
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact_submit{
+  background-color: #5c5e5f;
+  color: white;
+}
+
+.contact_map{
+  text-align: center;
+  margin-top: 30px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.contact ol li{
+  margin: 10px 0 0 60px;
+}
+
+
+@media screen and (min-width:640px) and (max-width:1023px) {
+  /*tablet*/
+
+  .header-logo-menu{
+    display: none;
+  }
+
+  /* 全体の領域の調整 */
+  .description{
+    width: 100%;
+  }
+  
+  .infomation{
+    float: initial;
+    width: 100%;
+  }
+
+  /* 写真とアイコンの調整 */
+  .mainphoto img{
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .mainphoto{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .icon ul{
+    text-align: center;
+  }
+
+  /* 行間等の調整 */
+  .date ul{
+    margin-left: 10px;
+  }
+
+  /* HOME以外の写真の調整 */
+  .facility_map img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .facility_map{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .contact_map img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .contact_map{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width:639px) {
+  /*スマホ*/
+  /* PC・タブレット時のメニューの設定を解除・非表示 */
+  nav ul{
+    list-style: initial;
+    display: initial;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin: initial;
+  }
+
+  .header-menu{
+    display: none;
+  }
+  
+  /* ハンバーガーメニューの設定 */
+  .header-logo-menu{
+    display: initial;
+  }
+
+  #nav-drawer {
+    position: relative;
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display: none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  
+  /*ハンバーガーの形をCSSで表現*/
+  #nav-open span, #nav-open span:before, #nav-open span:after{
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    border-radius: 4px;
+    background: #5e6061;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+
+  #nav-open span:before {
+    bottom: -8px;
+  }
+
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  /*閉じる用の薄黒箇所*/
+  #nav-close {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    /* ↑ゆったりと開く */
+  }
+  
+  /*メニューの中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 90%;
+    max-width: 300px;/*最大幅（お好みで調整を）*/
+    height: 100%;
+    background: #90ee90;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
+  
+  /*チェックがついたら表示させる*/
+  #nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  
+  .header-logo-menu{
+   display: flex;
+   display: -moz-flex;
+   display: -o-flex;
+   display: -webkit-flex;
+   display: -ms-flex;
+   flex-direction: row;
+   -moz-flex-direction: row;
+   -o-flex-direction: row;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+  }
+  
+  /*サイトタイトルを中央へ*/
+  .logo-area{
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* メニューのレイアウト */
+  #nav-content ul{
+    list-style: none;
+  }
+  
+  #nav-content ul li{
+    border-bottom: 2px dotted white;
+    color: white;
+    font-weight: bold; 
+    padding: 20px 20px;
+  }
+
+  #nav-drawer{
+    padding: 20px 0px 20px 10px;
+  }
+  /* ハンバーガーメニューの設定はここまで */
+
+  /* 全体の領域の調整 */
+  html{
+    font-size: 100%;
+  }
+
+  .description{
+    float: initial;
+    width: 100%;
+  }
+  
+  .infomation{
+    float: initial;
+    width: 100%;
+  }
+
+  /* 写真とアイコンの調整 */
+  .mainphoto{
+    width: 100%;
+  }
+
+  .mainphoto img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .mainphoto h1{
+    font-size: 2rem;
+  }
+
+  .icon ul{
+    text-align: center;
+  }
+
+  .photo_yuugu{
+    float: initial;
+  }
+
+  /* 行間やフォントサイズの調節 */
+  header{
+    font-size: 1rem;
+    height: 70px;
+  }
+  
+  .logo-area{
+    font-size: 1.8rem;
+  }
+
+  footer{
+    font-size: 0.8rem;
+  }
+
+  .mainphoto h1{
+    display: none;
+  }
+
+  h2{
+    margin-bottom: 5px;
+    font-size: 2rem;
+  }
+
+  .date ul{
+    margin-left: 10px;
+  }
+
+  .link{
+    font-size: 1.2rem;
+  }
+
+  /* メインページ以外の見出しの文字調整 */
+  .index{
+    font-size: 2rem;
+  }
+
+  /* HOME以外の写真の調整 */
+  .facility_map img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .facility_map{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .contact_map img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+  }
+
+  .contact_map{
+    width: 100%;
+    object-fit: contain;
+  }
+}

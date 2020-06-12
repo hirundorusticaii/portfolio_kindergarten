@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>お問い合わせ（かみつれ幼稚園）</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="descrintion" content="かみつれ幼稚園という空想の幼稚園の紹介サイトです">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <!-- jqueryをダウンロードして動かすための記述 -->
+  </head>
+  <body>
+    <header>
+      <div class="header-logo-menu">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <nav>
+              <ul>
+                <a href="index.html">
+                  <li>HOME</li>
+                </a>
+                <a href="feature.html">
+                  <li>保育の特色</li>
+                </a>
+                <a href="facility.html">
+                  <li>施設紹介</li>
+                </a>
+                <a href="event.html">
+                  <li>生活と行事</li>
+                </a>
+                <a href="admission.html">
+                  <li>入園について</li>
+                </a>
+                <a href="contact.html">
+                  <li>お問い合わせ</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="logo-area">
+          <a href="index.html">かみつれ幼稚園</a>
+        </div>
+      </div>
+      <div class="header-menu">
+        <a href="index.html">
+          <h1>
+            <img src="img/logo.jpg" alt="かみつれ幼稚園のロゴ">
+          </h1>
+        </a>
+        <nav>
+          <ul>
+            <a href="index.html">
+              <li>HOME</li>
+            </a>
+            <a href="feature.html">
+              <li>保育の特色</li>
+            </a>
+            <a href="facility.html">
+              <li>施設紹介</li>
+            </a>
+            <a href="event.html">
+              <li>生活と行事</li>
+            </a>
+            <a href="admission.html">
+              <li>入園について</li>
+            </a>
+            <a href="contact.html">
+              <li>お問い合わせ</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="index">お問い合わせ</h1>
+      <section class="intro contact">
+        <h2>お問い合わせフォーム</h2>
+        <div class="contact_form">
+          <p>お名前（必須）</p>
+          <input>
+          <p>メールアドレス（必須）</p>
+          <input>
+          <p>電話番号</p>
+          <input>
+          <p>お問い合わせ内容（必須）</p>
+          <textarea></textarea>
+          <p>※必須項目は必ずご入力ください</p>
+          <input class="contact_submit" type="submit" value="送信">
+        </div>
+      </section>
+      <section class="intro contact">
+        <h2>施設案内</h2>
+        <ol>
+          <li>●●交差点を左折</li>
+          <li>「かみつれ幼稚園」の案内看板を斜め右へ※対向車注意</li>
+          <li>そのまま門に入る</li>
+          <li>右側園庭内に駐車場があります</li>
+        </ol>
+        <div class="contact_map">
+          <img src="img/facilitymap.jpg" alt="施設案内のイラスト">
+        </div>
+        <div class="whitebox"></div>
+      </section>
+    </main>
+    <footer>
+      <p>かみつれ幼稚園</p>
+      <p>〒000-XXXX ●●県●●市●●町X-X-X</p>
+      <p>TEL:XXXX-XX-XXXX FAX:XXXX-XX-XXXX</p>
+      <p>E-mail:Kamitsure@aaa.ne.jp</p>
+      <p>(C)Kamitsure Kindergarten</p>
+    </footer>
+  </body>
+  <script>
+    $(function() {
+      $('#nav-content li a').on('click', function(event) {
+        $('#nav-input').prop('checked', false);
+      });
+    });
+  </script>
+</html>
