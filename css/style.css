@@ -297,10 +297,17 @@ input,textarea{
 @media screen and (min-width:640px) and (max-width:1023px) {
   /*tablet*/
 
+  /* headerの調整 */
   .header-logo-menu{
     display: none;
   }
 
+ nav ul li {
+    margin: 20px 24px 20px 24px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  
   /* 全体の領域の調整 */
   .description{
     width: 100%;
@@ -474,6 +481,7 @@ input,textarea{
   .logo-area{
     text-align: center;
     margin: auto;
+    margin-top: 12px;
   }
   
   /* メニューのレイアウト */
@@ -520,7 +528,7 @@ input,textarea{
   }
 
   .mainphoto h1{
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .icon ul{
@@ -549,16 +557,39 @@ input,textarea{
     display: none;
   }
 
+  .intro h2{
+    margin-left: 0;
+  }
+
+  .intro h3{
+    margin: 25px 25px;
+  }
+
   h2{
     margin-bottom: 5px;
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  h3{
+    font-size: 1.4rem;
   }
 
   .date ul{
     margin-left: 10px;
+    font-size: 1.2rem;
   }
 
   .link{
+    font-size: 1.2rem;
+  }
+
+  .summary{
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .box p{
     font-size: 1.2rem;
   }
 
@@ -588,5 +619,18 @@ input,textarea{
   .contact_map{
     width: 100%;
     object-fit: contain;
+  }
+
+  /* HOME以外の行間やフォントサイズの調節 */
+  .concept ul{
+    font-size: 1.2rem;
+  }
+
+  .contact_form{
+    font-size: 1.5rem;
+  }
+
+  .contact ol{
+    font-size: 1.2rem;
   }
 }
