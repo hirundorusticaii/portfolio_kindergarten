@@ -109,9 +109,7 @@ h2{
 }
 
 .intro h2{
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 50px 0 20px 20px;
   border-bottom: 2px dotted #90ee90;
 }
 
@@ -263,6 +261,7 @@ th{
   margin-bottom: 0;
 }
 
+/* お問い合わせのページレイアウト */
 .contact_form{
   padding-top: 30px;
   text-align: center;
@@ -270,8 +269,7 @@ th{
 
 input,textarea{
   width: 400px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 10px 0 30px 0;
   padding: 20px;
   font-size: 18px;
   border: 1px solid #dee7ec;
@@ -610,17 +608,6 @@ input,textarea{
     object-fit: contain;
   }
 
-  .contact_map img{
-    width: 100%;
-    object-fit: contain;
-    margin-bottom: 0px;
-  }
-
-  .contact_map{
-    width: 100%;
-    object-fit: contain;
-  }
-
   /* HOME以外の行間やフォントサイズの調節 */
   .concept ul{
     font-size: 1.2rem;
@@ -633,4 +620,7 @@ input,textarea{
   .contact ol{
     font-size: 1.2rem;
   }
+
+  /* お問い合わせフォームの調整 */
+
 }
