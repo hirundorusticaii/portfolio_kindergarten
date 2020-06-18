@@ -614,7 +614,7 @@ input,textarea{
   }
 
   .contact_form{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .contact ol{
@@ -622,5 +622,7 @@ input,textarea{
   }
 
   /* お問い合わせフォームの調整 */
-
+  input,textarea{
+    width: 70%;
+  }
 }
